@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.SearchBox{
+    display: flex;
+    margin: 30px auto;
+}
+input{
+    padding:15px 14px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: bold;
+    color: rgb(144, 143, 143);
+    border: 1px solid #d1b4e8;
+}
+
+input:focus-within{
+    background-color: #190728;
+    color:#fffffc;
+    
+}
+input:focus-within::placeholder{
+    color: #fffffc;
+}

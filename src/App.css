@@ -1,38 +1,42 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap');
+
+body {
+  background-color: #190728;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, span{
+  font-size: 50px;
+  font-family: 'Bigelow Rules', cursive;
   text-align: center;
+  margin-top: 50px;
+  letter-spacing: 2.4px;
+  font-weight: bolder;
+  color: #d1b4e8;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* animate text in span  */
+.author {
+  animation: slidein 3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes slidein {
   from {
-    transform: rotate(0deg);
+    margin-left: 100%;
+    width: 300%;
   }
+
   to {
-    transform: rotate(360deg);
+    margin-left: 0%;
+    width: 100%;
   }
+}
+
+.author{
+  width: 50px;
+  font-size:30px;
+ 
 }

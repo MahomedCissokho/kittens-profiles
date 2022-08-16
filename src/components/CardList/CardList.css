@@ -1,0 +1,9 @@
+.CardList{
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+    gap: 30px;
+}
