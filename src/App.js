@@ -1,5 +1,6 @@
 import './App.css';
 import {Component} from 'react';
+import GithubRepo from './Octocat/Octocat.png';
 import Typewriter from 'typewriter-effect';
 import CardList from './components/CardList/CardList.component';
 import SearchBox from './components/SearchBox/SearchBox.component';
@@ -48,7 +49,10 @@ class App extends Component {
           }}
         />
       </h1>  
-      <SearchBox SearchOnChange={SearchOnChange} placeholder="search monsters" className="SearchBox"/>
+      <a href='https://github.com/MahomedCissokho' target="_blank" rel='noreferrer'>
+        <img src= {GithubRepo} alt='github' className='github-icon'title='github'/>
+      </a>
+      <SearchBox SearchOnChange={SearchOnChange} placeholder="search kittens" className="SearchBox"/>
       <CardList FilteredMonsters={FilteredMonsters} />
       <span className='author'>@Cisco</span>
     </div> 
