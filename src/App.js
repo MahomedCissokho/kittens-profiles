@@ -40,7 +40,7 @@ class App extends Component {
       <h1>  
         <Typewriter 
           options={{ 
-            strings: [ '< Kittens Rolodex />'],
+            srings: [ '< Kittens Rolodex />'],
             autoStart: true,
             loop: true,
             delay: 100,
